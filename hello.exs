@@ -5,3 +5,9 @@ IO.puts "Hello, World!"
 a = 1 
 a = 2
 ^a = 1
+
+# [ head | tail ]
+list 1 = [ 3, 2, 1 ]
+# [ 3, 2, 1 ]
+list 2 = [ 4 | list1 ]
+# [ 4, 3, 2, 1 ]
