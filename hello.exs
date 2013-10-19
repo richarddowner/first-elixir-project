@@ -50,3 +50,12 @@ float = 314158.0e-5
 # :"do want cheeseburger"
 
 # Regular expressions
+# opt: f, g, i, m, r, s, u, x
+Regex.run %r/[aieou]/, "caterpillar"
+# ["a"]
+Regex.scan %r/[aieou]/, "caterpillar"
+# ["a", "e", "i", "a"]
+Regex.split %r/[aieou]/, "caterpillar"
+# ["c", "t", "rp", "ll", "r"]
+Regex.replace %r/[aieou]/, "caterpillar", "*"
+# "c*t*rp*ll*r"
