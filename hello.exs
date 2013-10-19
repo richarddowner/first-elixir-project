@@ -19,3 +19,34 @@ cap_name = String.capitalize name
 # "Elixir"
 name
 # "elixir"
+
+# Data types
+
+# Int 
+# can have underscore
+num = 1_000_000
+# 1000000
+
+# Floating point 
+# must have at least one number before and after decimal
+float = 1.0
+# 1.0
+float = 0.314158e1
+# 3.14158
+float = 314158.0e-5
+# 3.14158
+
+# Atoms 
+# constants that represent the name of something
+# their name is their value
+# two atoms with the same name always compare as being equal
+:richard
+# :richard
+:is_cheeseburger?
+# :is_cheeseburger?
+:===
+# :===
+:"do want cheeseburger"
+# :"do want cheeseburger"
+
+# Regular expressions
