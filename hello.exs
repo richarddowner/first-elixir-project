@@ -59,3 +59,13 @@ Regex.split %r/[aieou]/, "caterpillar"
 # ["c", "t", "rp", "ll", "r"]
 Regex.replace %r/[aieou]/, "caterpillar", "*"
 # "c*t*rp*ll*r"
+
+# Tuples
+# ordered collection of values
+{status, count, action} = {:ok, 42, "next"}
+# {:ok, 42, "next"}
+# functions can return a tuple
+{status, file} = File.open("Rakefile")
+# {:ok, #PID<0.39.0>}
+{ :ok, file } = File.open("Rakefile")
+# {:ok, #PID<0.39.0>}
