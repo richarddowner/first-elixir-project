@@ -29,7 +29,6 @@ num = 1_000_000
 
 # Floating point 
 # must have at least one number before and after decimal
-# test
 float = 1.0
 # 1.0
 float = 0.314158e1
